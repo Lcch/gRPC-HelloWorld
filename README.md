@@ -58,3 +58,17 @@ $ gradle runServer
 # client
 $ gradle runClient
 ```
+
+
+#### Android
+
+For Android client, use grpc-okhttp instead of grpc-netty and grpc-protobuf-nano or grpc-protobuf-lite instead of grpc-protobuf:
+
+```
+compile 'io.grpc:grpc-okhttp:0.14.0'
+compile 'io.grpc:grpc-protobuf-nano:0.14.0'
+compile 'io.grpc:grpc-stub:0.14.0'
+```
+
+For protobuf-based codegen integrated with the Gradle build system, you can use protobuf-gradle-plugin:
+
